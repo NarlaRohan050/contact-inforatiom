@@ -1,27 +1,4 @@
-# Node.js
-node_modules/
-.env
-npm-debug.log
-yarn-error.log
-yarn-debug.log
-.pnpm-debug.log
-.npm
-.yarn
-
-# Build files
-dist/
-build/
-out/
-.next/
-.nuxt/
-.cache/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+node_modules/ 
+.env 
+npm-debug.log 
+.DS_Store 
