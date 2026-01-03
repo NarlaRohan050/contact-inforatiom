@@ -12,4 +12,4 @@ const contactSchema = new mongoose.Schema({
   message: { type: String, default: '' }
 }, { timestamps: true });
 
-module.exports = mongoose.model('Contact', contactSchema);
+module.exports = mongoose.model('contact', contactSchema);
