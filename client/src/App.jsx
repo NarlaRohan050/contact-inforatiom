@@ -18,7 +18,7 @@ function App() {
 
   const fetchContacts = async () => {
     try {
-      const res = await fetch('http://localhost:4000/api/contacts');
+      const res = await fetch('https://contact-inforatiom.onrender.com/api/contacts');
       if (res.ok) {
         const data = await res.json();
         setContacts(data);
@@ -55,7 +55,7 @@ function App() {
 
     if (Object.keys(newErrors).length === 0) {
       try {
-        const res = await fetch('http://localhost:4000/api/contacts', {
+        const res = await fetch('https://contact-inforatiom.onrender.com/api/contacts', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(form)
@@ -72,7 +72,7 @@ function App() {
           alert('Error: ' + (result.error || 'Failed to save contact'));
         }
       } catch (err) {
-        alert('❌ Network error. Make sure the backend is running on port 4000.');
+        alert('❌ Network error. Please check your internet connection.');
       }
     }
   };
